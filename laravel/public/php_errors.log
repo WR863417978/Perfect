@@ -1,0 +1,142 @@
+[02-Jan-2018 07:32:41 UTC] PHP Fatal error:  Class 'Predis\Client' not found in E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connectors\PredisConnector.php on line 25
+[02-Jan-2018 07:33:12 UTC] PHP Fatal error:  Class 'Predis\Client' not found in E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connectors\PredisConnector.php on line 25
+[02-Jan-2018 07:35:44 UTC] PHP Fatal error:  Class 'Predis\Client' not found in E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connectors\PredisConnector.php on line 25
+[02-Jan-2018 07:37:33 UTC] PHP Fatal error:  Class 'Predis\Client' not found in E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connectors\PredisConnector.php on line 25
+[02-Jan-2018 07:37:40 UTC] PHP Fatal error:  Class 'Predis\Client' not found in E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connectors\PredisConnector.php on line 25
+[02-Jan-2018 07:37:43 UTC] PHP Fatal error:  Class 'Predis\Client' not found in E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connectors\PredisConnector.php on line 25
+[03-Jan-2018 01:59:49 UTC] PHP Warning:  Uncaught exception 'RedisException' with message 'read error on connection' in E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php:72
+Stack trace:
+#0 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php(72): Redis->set('shopCart11', Array, NULL)
+#1 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\PhpRedisConnection.php(65): Illuminate\Redis\Connections\Connection->command('set', Array)
+#2 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\RedisManager.php(130): Illuminate\Redis\Connections\PhpRedisConnection->set('shopCart11', Array)
+#3 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(221): Illuminate\Redis\RedisManager->__call('set', Array)
+#4 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(221): Illuminate\Redis\RedisManager->set('shopCart11',  in E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php on line 72
+[03-Jan-2018 01:59:49 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php on line 72
+[03-Jan-2018 02:00:54 UTC] PHP Warning:  Uncaught exception 'RedisException' with message 'read error on connection' in E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php:72
+Stack trace:
+#0 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php(72): Redis->set('shopCart11', Array, NULL)
+#1 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\PhpRedisConnection.php(65): Illuminate\Redis\Connections\Connection->command('set', Array)
+#2 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\RedisManager.php(130): Illuminate\Redis\Connections\PhpRedisConnection->set('shopCart11', Array)
+#3 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(221): Illuminate\Redis\RedisManager->__call('set', Array)
+#4 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(221): Illuminate\Redis\RedisManager->set('shopCart11',  in E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php on line 72
+[03-Jan-2018 02:00:54 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php on line 72
+[03-Jan-2018 02:01:22 UTC] PHP Warning:  Uncaught exception 'RedisException' with message 'read error on connection' in E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php:72
+Stack trace:
+#0 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php(72): Redis->set('shopCart11', Array, NULL)
+#1 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\PhpRedisConnection.php(65): Illuminate\Redis\Connections\Connection->command('set', Array)
+#2 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\RedisManager.php(130): Illuminate\Redis\Connections\PhpRedisConnection->set('shopCart11', Array)
+#3 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(221): Illuminate\Redis\RedisManager->__call('set', Array)
+#4 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(221): Illuminate\Redis\RedisManager->set('shopCart11',  in E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php on line 72
+[03-Jan-2018 02:01:22 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php on line 72
+[03-Jan-2018 02:01:30 UTC] PHP Warning:  Uncaught exception 'RedisException' with message 'read error on connection' in E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php:72
+Stack trace:
+#0 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php(72): Redis->set('shopCart11', Array, NULL)
+#1 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\PhpRedisConnection.php(65): Illuminate\Redis\Connections\Connection->command('set', Array)
+#2 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\RedisManager.php(130): Illuminate\Redis\Connections\PhpRedisConnection->set('shopCart11', Array)
+#3 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(221): Illuminate\Redis\RedisManager->__call('set', Array)
+#4 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(221): Illuminate\Redis\RedisManager->set('shopCart11',  in E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php on line 72
+[03-Jan-2018 02:01:30 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php on line 72
+[03-Jan-2018 02:22:10 UTC] PHP Warning:  Uncaught exception 'RedisException' with message 'read error on connection' in E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php:72
+Stack trace:
+#0 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php(72): Redis->set('shopCart11', Array, NULL)
+#1 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\PhpRedisConnection.php(65): Illuminate\Redis\Connections\Connection->command('set', Array)
+#2 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\RedisManager.php(130): Illuminate\Redis\Connections\PhpRedisConnection->set('shopCart11', Array)
+#3 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(221): Illuminate\Redis\RedisManager->__call('set', Array)
+#4 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(221): Illuminate\Redis\RedisManager->set('shopCart11',  in E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php on line 72
+[03-Jan-2018 02:22:10 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php on line 72
+[03-Jan-2018 02:42:55 UTC] PHP Warning:  Uncaught exception 'RedisException' with message 'read error on connection' in E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php:72
+Stack trace:
+#0 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php(72): Redis->set('shopCart11', 123, NULL)
+#1 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\PhpRedisConnection.php(65): Illuminate\Redis\Connections\Connection->command('set', Array)
+#2 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\RedisManager.php(130): Illuminate\Redis\Connections\PhpRedisConnection->set('shopCart11', 123)
+#3 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(221): Illuminate\Redis\RedisManager->__call('set', Array)
+#4 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(221): Illuminate\Redis\RedisManager->set('shopCart11', 123) in E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php on line 72
+[03-Jan-2018 02:42:55 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php on line 72
+[03-Jan-2018 07:45:06 UTC] PHP Fatal error:  Call to undefined method Redis::zset() in E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php on line 72
+[03-Jan-2018 07:58:33 UTC] PHP Fatal error:  Call to undefined method Redis::zset() in E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php on line 72
+[03-Jan-2018 08:22:25 UTC] PHP Parse error:  syntax error, unexpected 'Route' (T_STRING) in E:\study\WWW\Practical\laravel\routes\web.php on line 39
+[03-Jan-2018 08:22:43 UTC] PHP Parse error:  syntax error, unexpected 'Route' (T_STRING) in E:\study\WWW\Practical\laravel\routes\web.php on line 39
+[03-Jan-2018 08:30:52 UTC] PHP Fatal error:  Call to undefined function App\Http\Controllers\Home\input() in E:\study\WWW\Practical\laravel\app\Http\Controllers\Home\ShopCartController.php on line 34
+[03-Jan-2018 08:31:27 UTC] PHP Fatal error:  Call to undefined function App\Http\Controllers\Home\input() in E:\study\WWW\Practical\laravel\app\Http\Controllers\Home\ShopCartController.php on line 34
+[03-Jan-2018 08:32:12 UTC] PHP Fatal error:  Call to undefined function App\Http\Controllers\Home\input() in E:\study\WWW\Practical\laravel\app\Http\Controllers\Home\ShopCartController.php on line 35
+[03-Jan-2018 08:34:27 UTC] PHP Fatal error:  Cannot use Illuminate\Http\Request as Request because the name is already in use in E:\study\WWW\Practical\laravel\app\Http\Controllers\Home\ShopCartController.php on line 9
+[03-Jan-2018 08:38:04 UTC] PHP Fatal error:  Cannot use Illuminate\Http\Request as Request because the name is already in use in E:\study\WWW\Practical\laravel\app\Http\Controllers\Home\ShopCartController.php on line 9
+[03-Jan-2018 10:32:56 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in E:\study\WWW\Practical\laravel\app\Http\Controllers\Home\ShopCartController.php on line 22
+[04-Jan-2018 02:15:35 UTC] PHP Parse error:  syntax error, unexpected '`' in E:\study\WWW\Practical\laravel\app\Http\Controllers\Home\ShopCartController.php on line 36
+[04-Jan-2018 02:33:38 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in E:\study\WWW\Practical\laravel\storage\framework\views\ff9b50a048208e55274362fdda26cfcd987d2c16.php on line 30
+[04-Jan-2018 02:34:10 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in E:\study\WWW\Practical\laravel\storage\framework\views\ff9b50a048208e55274362fdda26cfcd987d2c16.php on line 30
+[04-Jan-2018 02:36:01 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in E:\study\WWW\Practical\laravel\storage\framework\views\ff9b50a048208e55274362fdda26cfcd987d2c16.php on line 30
+[04-Jan-2018 02:36:21 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in E:\study\WWW\Practical\laravel\storage\framework\views\ff9b50a048208e55274362fdda26cfcd987d2c16.php on line 30
+[04-Jan-2018 02:50:50 UTC] PHP Parse error:  syntax error, unexpected '0' (T_LNUMBER), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in E:\study\WWW\Practical\laravel\storage\framework\views\ff9b50a048208e55274362fdda26cfcd987d2c16.php on line 32
+[04-Jan-2018 03:01:30 UTC] PHP Parse error:  syntax error, unexpected '}' in E:\study\WWW\Practical\laravel\app\Http\Controllers\Home\ShopCartController.php on line 45
+[04-Jan-2018 03:10:05 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in E:\study\WWW\Practical\laravel\app\Http\Controllers\Home\ShopCartController.php on line 44
+[04-Jan-2018 03:11:35 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in E:\study\WWW\Practical\laravel\app\Http\Controllers\Home\ShopCartController.php on line 44
+[04-Jan-2018 03:11:51 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in E:\study\WWW\Practical\laravel\app\Http\Controllers\Home\ShopCartController.php on line 44
+[04-Jan-2018 03:15:36 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in E:\study\WWW\Practical\laravel\app\Http\Controllers\Home\ShopCartController.php on line 46
+[04-Jan-2018 03:20:20 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in E:\study\WWW\Practical\laravel\app\Http\Controllers\Home\ShopCartController.php on line 45
+[04-Jan-2018 03:24:02 UTC] PHP Fatal error:  Cannot use [] for reading in E:\study\WWW\Practical\laravel\app\Http\Controllers\Home\ShopCartController.php on line 45
+[04-Jan-2018 03:24:17 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in E:\study\WWW\Practical\laravel\app\Http\Controllers\Home\ShopCartController.php on line 44
+[04-Jan-2018 03:27:29 UTC] PHP Parse error:  syntax error, unexpected 'foreach' (T_FOREACH) in E:\study\WWW\Practical\laravel\app\Http\Controllers\Home\ShopCartController.php on line 43
+[04-Jan-2018 03:27:31 UTC] PHP Parse error:  syntax error, unexpected 'foreach' (T_FOREACH) in E:\study\WWW\Practical\laravel\app\Http\Controllers\Home\ShopCartController.php on line 43
+[04-Jan-2018 03:27:33 UTC] PHP Parse error:  syntax error, unexpected 'foreach' (T_FOREACH) in E:\study\WWW\Practical\laravel\app\Http\Controllers\Home\ShopCartController.php on line 43
+[04-Jan-2018 07:32:55 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Home\Cookie' not found in E:\study\WWW\Practical\laravel\app\Http\Controllers\Home\ShopCartController.php on line 72
+[04-Jan-2018 12:15:10 UTC] PHP Parse error:  syntax error, unexpected ',' in E:\study\WWW\Practical\laravel\app\Http\Controllers\Home\ShopCartController.php on line 80
+[04-Jan-2018 12:15:14 UTC] PHP Parse error:  syntax error, unexpected ',' in E:\study\WWW\Practical\laravel\app\Http\Controllers\Home\ShopCartController.php on line 80
+[04-Jan-2018 15:02:41 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'Undefined variable: K' in E:\study\WWW\Practical\laravel\app\Http\Controllers\Home\ShopCartController.php:29
+Stack trace:
+#0 E:\study\WWW\Practical\laravel\app\Http\Controllers\Home\ShopCartController.php(29): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'Undefined varia...', 'E:\\study\\WWW\\Pr...', 29, Array)
+#1 [internal function]: App\Http\Controllers\Home\ShopCartController->shopCartList(Object(Illuminate\Http\Request))
+#2 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controller.php(55): call_user_func_array(Array, Array)
+#3 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php(44): Illuminate\Routing\Controller->callAction('shopCartList', Array)
+#4 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(204): Illuminate\Routing\ControllerDispatcher->dispatch(Object(Illuminate\Routing\Route), Object(App\Http\Controllers\H in E:\study\WWW\Practical\laravel\app\Http\Controllers\Home\ShopCartController.php on line 29
+[04-Jan-2018 15:02:41 UTC] PHP Fatal error:  Cannot access empty property in E:\study\WWW\Practical\laravel\app\Http\Controllers\Home\ShopCartController.php on line 29
+[04-Jan-2018 15:09:07 UTC] PHP Parse error:  syntax error, unexpected ''productId'' (T_CONSTANT_ENCAPSED_STRING), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in E:\study\WWW\Practical\laravel\app\Http\Controllers\Home\ShopCartController.php on line 33
+[05-Jan-2018 07:20:55 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in E:\study\WWW\Practical\laravel\app\Http\Controllers\Home\ShopCartController.php on line 90
+[05-Jan-2018 07:21:16 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in E:\study\WWW\Practical\laravel\app\Http\Controllers\Home\ShopCartController.php on line 90
+[05-Jan-2018 07:21:46 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Home\Redirect' not found in E:\study\WWW\Practical\laravel\app\Http\Controllers\Home\ShopCartController.php on line 91
+[05-Jan-2018 07:23:50 UTC] PHP Fatal error:  Class 'Illuminate\Http\Redirect' not found in E:\study\WWW\Practical\laravel\app\Http\Controllers\Home\ShopCartController.php on line 92
+[05-Jan-2018 07:26:23 UTC] PHP Fatal error:  Class 'Illuminate\Http\Redirect' not found in E:\study\WWW\Practical\laravel\app\Http\Controllers\Home\ShopCartController.php on line 92
+[05-Jan-2018 07:46:02 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in E:\study\WWW\Practical\laravel\app\Http\Controllers\Home\ShopCartController.php on line 91
+[05-Jan-2018 12:12:45 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in E:\study\WWW\Practical\laravel\storage\framework\views\ff9b50a048208e55274362fdda26cfcd987d2c16.php on line 39
+[06-Jan-2018 02:29:43 UTC] PHP Fatal error:  Call to undefined method Redis::hmdel() in E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php on line 72
+[06-Jan-2018 02:29:51 UTC] PHP Fatal error:  Call to undefined method Redis::hmdel() in E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php on line 72
+[08-Jan-2018 01:15:35 UTC] PHP Warning:  Uncaught exception 'RedisException' with message 'read error on connection' in E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php:72
+Stack trace:
+#0 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php(72): Redis->exists('cart:5:1')
+#1 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php(84): Illuminate\Redis\Connections\Connection->command('exists', Array)
+#2 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\PhpRedisConnection.php(259): Illuminate\Redis\Connections\Connection->__call('exists', Array)
+#3 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\RedisManager.php(130): Illuminate\Redis\Connections\PhpRedisConnection->__call('exists', Array)
+#4 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\RedisManager.php(130): Illuminate\Redis\Connections\PhpRedisConnect in E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php on line 72
+[08-Jan-2018 01:15:35 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php on line 72
+[08-Jan-2018 01:15:40 UTC] PHP Warning:  Uncaught exception 'RedisException' with message 'read error on connection' in E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php:72
+Stack trace:
+#0 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php(72): Redis->exists('cart:5:1')
+#1 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php(84): Illuminate\Redis\Connections\Connection->command('exists', Array)
+#2 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\PhpRedisConnection.php(259): Illuminate\Redis\Connections\Connection->__call('exists', Array)
+#3 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\RedisManager.php(130): Illuminate\Redis\Connections\PhpRedisConnection->__call('exists', Array)
+#4 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\RedisManager.php(130): Illuminate\Redis\Connections\PhpRedisConnect in E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php on line 72
+[08-Jan-2018 01:15:40 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php on line 72
+[08-Jan-2018 01:15:51 UTC] PHP Warning:  Uncaught exception 'RedisException' with message 'read error on connection' in E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php:72
+Stack trace:
+#0 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php(72): Redis->sMembers('cart:ids:set:')
+#1 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php(84): Illuminate\Redis\Connections\Connection->command('smembers', Array)
+#2 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\PhpRedisConnection.php(259): Illuminate\Redis\Connections\Connection->__call('smembers', Array)
+#3 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\RedisManager.php(130): Illuminate\Redis\Connections\PhpRedisConnection->__call('sMembers', Array)
+#4 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\RedisManager.php(130): Illuminate\Redis\Connections\Ph in E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php on line 72
+[08-Jan-2018 01:15:51 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php on line 72
+[08-Jan-2018 01:16:01 UTC] PHP Warning:  Uncaught exception 'RedisException' with message 'read error on connection' in E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php:72
+Stack trace:
+#0 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php(72): Redis->sMembers('cart:ids:set:')
+#1 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php(84): Illuminate\Redis\Connections\Connection->command('smembers', Array)
+#2 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\PhpRedisConnection.php(259): Illuminate\Redis\Connections\Connection->__call('smembers', Array)
+#3 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\RedisManager.php(130): Illuminate\Redis\Connections\PhpRedisConnection->__call('sMembers', Array)
+#4 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\RedisManager.php(130): Illuminate\Redis\Connections\Ph in E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php on line 72
+[08-Jan-2018 01:16:01 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php on line 72
+[08-Jan-2018 01:16:08 UTC] PHP Warning:  Uncaught exception 'RedisException' with message 'read error on connection' in E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php:72
+Stack trace:
+#0 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php(72): Redis->sMembers('cart:ids:set:')
+#1 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php(84): Illuminate\Redis\Connections\Connection->command('smembers', Array)
+#2 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\PhpRedisConnection.php(259): Illuminate\Redis\Connections\Connection->__call('smembers', Array)
+#3 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\RedisManager.php(130): Illuminate\Redis\Connections\PhpRedisConnection->__call('sMembers', Array)
+#4 E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\RedisManager.php(130): Illuminate\Redis\Connections\Ph in E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php on line 72
+[08-Jan-2018 01:16:08 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in E:\study\WWW\Practical\laravel\vendor\laravel\framework\src\Illuminate\Redis\Connections\Connection.php on line 72
