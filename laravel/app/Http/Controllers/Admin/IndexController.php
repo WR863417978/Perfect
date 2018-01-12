@@ -9,11 +9,11 @@ use DB;
 /**
 * 首页控制器
 */
-class IndexController extends Controller
+class IndexController extends CommonController
 {
-	// 登录页面
+	// 首页
 	public function index()
 	{
-		return view('admin.index');
+		return view('admin.index',['menu'=>self::$menu]);
 	}
 }

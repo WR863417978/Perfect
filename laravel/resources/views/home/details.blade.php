@@ -7,9 +7,9 @@
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=no" /> 
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-<link rel="stylesheet" rev="stylesheet" href="css/tuan.css" type="text/css" media="screen">
+<link rel="stylesheet" rev="stylesheet" href="../css/tuan.css" type="text/css" media="screen">
 
-<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
 
 
 
@@ -93,7 +93,29 @@
                     </div>
                 </div>
             </div>
-            
+            <script>
+                $(function(){
+                    $(document).on('click','#btn-addtocart',function(){
+                        var productId = 1;// 需要加入购物车的货品id
+                        var goodsId = 1;// 需要加入购物车的商品id
+
+                        var goodsNum = parseInt($('#amount-input').val());// 需要加入购物车的数量
+
+                        $.ajax({
+                            url:"{{url('home/addShopCart')}}",
+                            data:{productId:productId,goodsId:goodsId,goodsNum:goodsNum},
+                            type:"get",
+                            dataType:"json",
+                            success:function(res)
+                            {
+                                if (res.error == 0) {
+                                    alert('添加购物车成功！');
+                                }
+                            }
+                        })
+                    })
+                })
+            </script>
             
             
             

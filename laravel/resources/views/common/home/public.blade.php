@@ -7,13 +7,15 @@
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=no" /> 
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="css/cart.css"/>
 
 <link rel="stylesheet" rev="stylesheet" href="css/base.css" type="text/css" media="screen">
 <link rel="stylesheet" rev="stylesheet" href="css/www.css" type="text/css" media="screen">
 <link rel="stylesheet" rev="stylesheet" href="css/mobile.css" type="text/css" media="screen">
 <link href="css/user.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="js/jquery.min.js"></script>
-
+<script type="text/javascript" src="js/cart.js"></script>
+<script type="text/javascript" src="js/hot-products.js"></script>
 
 </head>
 <body>

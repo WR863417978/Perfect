@@ -5,15 +5,17 @@
 @section('content')
 
 
-<link rel="stylesheet" href="css/cart.css"/>
-<script type="text/javascript" src="js/cart.js"></script>
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/hot-products.js"></script>
+
 
 
     <!--cart-->
     <div class="catbox">
     	<div class="title"><p>我的购物车<span>在线支付全场满¥150免运费</span></p></div>
+         <?php if(!isset($goodsInfo)){?>
+                    <tr>
+                        <td>购物车为空！</td>
+                    </tr>
+         <?php }else{?>           
         <table id="cartTable"  border="0" cellpadding="0" cellspacing="0">
             <thead>
                 <tr style="background-image:none;">
@@ -26,40 +28,21 @@
                 </tr>
             </thead>
             <tbody>
+                <?php foreach($goodsInfo as $v){?>
                 <tr>
                     <td class="checkbox"><input class="check-one check" type="checkbox"/></td>
-                    <td class="goods"><a href="#"><img src="images/01.jpg" width="100" height="100"/><span>清水软胶保护套 黄色<i>适配机型： 红米1S/红米</i></span></a></td>
-                    <td class="price">5999.88元</td>
-                    <td class="count"><span class="reduce"></span><input class="count-input" type="text" value="1"/><span class="add">+</span></td>
-                    <td class="subtotal">640.60</td>
-                    <td class="operation"><span class="delete">X</span></td>
+                    <td class="goods"><a href="#"><img src="images/01.jpg" width="100" height="100"/><span>{{$v->goodsName}}<i>适配机型： 红米1S/红米</i></span></a></td>
+                    <td class="price">{{$v->goodsPrice}}元</td>
+                    <td class="count"><span class="reduce"></span><input class="count-input" type="text" value="{{$v->goodsNum}}"/><span class="add">+</span></td>
+                    <td class="subtotal">{{$v->goodsPrice*$v->goodsNum}}</td>
+                    <input type="hidden" class="productId" value="{{$v->productId}}">
+                    <input type="hidden" class="goodsId" value="{{$v->goodsId}}">
+                    <td class=""><span class="deleteShopCart">X</span></td>
                 </tr>
-                <tr>
-                    <td class="checkbox"><input class="check-one check" type="checkbox"/></td>
-                    <td class="goods"><a href="#"><img src="images/02.jpg" width="100" height="100"/><span>清水软胶保护套 黄色<i>适配机型： 红米1S/红米</i></span></a></td>
-                    <td class="price">3888.50元</td>
-                    <td class="count"><span class="reduce"></span><input class="count-input" type="text" value="1"/><span class="add">+</span></td>
-                    <td class="subtotal">640.60</td>
-                    <td class="operation"><span class="delete">X</span></td>
-                </tr>
-                <tr>
-                    <td class="checkbox"><input class="check-one check" type="checkbox"/></td>
-                    <td class="goods"><a href="#"><img src="images/01.jpg" width="100" height="100"/><span>清水软胶保护套 黄色<i>适配机型： 红米1S/红米</i></span></a></td>
-                    <td class="price">1428.50元</td>
-                    <td class="count"><span class="reduce"></span><input class="count-input" type="text" value="1"/><span class="add">+</span></td>
-                    <td class="subtotal">640.60</td>
-                    <td class="operation"><span class="delete">X</span></td>
-                </tr>
-                <tr>
-                    <td class="checkbox"><input class="check-one check" type="checkbox"/></td>
-                    <td class="goods"><a href="#"><img src="images/01.jpg" width="100" height="100"/><span>清水软胶保护套 黄色<i>适配机型： 红米1S/红米</i></span></a></td>
-                    <td class="price">640.60元</td>
-                    <td class="count"><span class="reduce"></span><input class="count-input" type="text" value="1"/><span class="add">+</span></td>
-                    <td class="subtotal">640.60</td>
-                    <td class="operation"><span class="delete">X</span></td>
-                </tr>
+                <?php }?>
             </tbody>
         </table>
+
         
         <div class="foot" id="foot">
             <label class="fl select-all"><input type="checkbox" class="check-all check"/>&nbsp;&nbsp;全选</label>
@@ -73,8 +56,52 @@
             <a href="payment.html" class="next">结账</a>
             <a href="index.html" class="modify">继续购物</a>
         </div>
-    
+        <?php }?>
     </div>
+    <script>
+        $(function()
+        {
+            $(document).on('click','.deleteShopCart',function()
+            {
+                if(confirm("确定要删除吗？"))
+                {
+                    goodsPrice = $(this).parent().prev().prev().prev().html();
+                    productId = $(this).parent().prev().prev().val();
+                    goodsId = $(this).parent().prev().val();
+
+                    singleGoodsNum = $(this).parent().prev().prev().prev().prev().children().next().val();// 获取选中的商品件数
+
+                    priceTotal = $('#priceTotal').text(); // 获取需要购买的商品总价
+
+                    selectedTotal = $('#selectedTotal').text();// 获取需要购买的商品件数
+
+                    obj = $(this);
+
+                    $.ajax({
+                        url:"{{url('home/deleteShopCart')}}",
+                        data:{productId:productId,goodsId:goodsId},
+                        type:"get",
+                        dataType:"json",
+                        success:function(res)
+                        {
+                            if (res.error == 0) 
+                            {
+                                priceTotal = priceTotal-goodsPrice;
+
+                                selectedTotal = selectedTotal-singleGoodsNum;
+
+                                $('#priceTotal').html(priceTotal);
+
+                                $('#selectedTotal').html(selectedTotal);
+
+                                obj.parent().parent().remove();
+                            }
+                        }
+                    })
+                }
+            })
+        })
+    </script>
     
     
     <!--hot-pro-->

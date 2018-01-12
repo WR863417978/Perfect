@@ -18,18 +18,94 @@ Route::get('/', function () {
 /*
 *		后台
 */
-Route::group(['prefix'=>'admin','namespace'=>'\Admin'],function(){
+Route::group(['prefix'=>'admin/index','namespace'=>'\Admin'],function(){
 		//首页展示
 		Route::any('index','IndexController@index');
 });
 
-
-
-
+Route::group(['prefix'=>'admin/login','namespace'=>'\Admin'],function(){
+		//首页展示
+		Route::any('index','LoginController@index');
+});
+//资金批次
+Route::group(['prefix'=>'admin/capital','namespace'=>'\Admin'],function(){
+		//申请资金批次
+		Route::any('add','CapitalController@add');
+		//所有资金申请
+		Route::any('showall','CapitalController@showall');
+		//我的申请
+		Route::any('showme','CapitalController@showme');
+		//修改申请状态
+		Route::any('updateStatus','CapitalController@updateStatus');
+		//申请详情
+		Route::any('details','CapitalController@details');
+});
+//红包
+Route::group(['prefix'=>'admin/redpacket','namespace'=>'\Admin'],function(){
+		//添加红包
+		Route::any('add','RedpacketController@add');
+		Route::any('showme','RedpacketController@showme');
+		Route::any('showall','RedpacketController@showall');
+		Route::any('details','RedpacketController@details');
+});
+//管理员管理
+Route::group(['prefix'=>'admin/user','namespace'=>'\Admin'],function(){
+		//添加管理员
+		Route::any('add','UserController@add');
+		//展示所有管理员
+		Route::any('show','UserController@show');
+});
+//权限管理
+Route::group(['prefix'=>'admin/auth','namespace'=>'\Admin'],function(){
+		//添加权限
+		Route::any('add','AuthController@add');
+		//展示所有权限
+		Route::any('show','AuthController@show');
+		//删除权限
+		Route::any('upd','AuthController@upd');
+		//修改权限状态
+		Route::any('upds','AuthController@upds');
+});
+//角色管理
+Route::group(['prefix'=>'admin/role','namespace'=>'\Admin'],function(){
+		//添加角色
+		Route::any('add','RoleController@add');
+		//展示所有角色
+		Route::any('show','RoleController@show');
+		//删除角色
+		Route::any('upd','RoleController@upd');
+		//修改角色状态
+		Route::any('upds','RoleController@upds');
+});
 /********************************前台***********************************/
+
+/**
+ * 购物车模块
+*/
+Route::group(['prefix'=>'home','namespace'=>'\Home'],function()
+{
+	route::any('shopCart','ShopCartController@shopCartList');//购物车页面
+	route::any('addShopCart','ShopCartController@addShopCart');//添加购物车
+	route::any('deleteShopCart','ShopCartController@deleteShopCart');//删除购物车
+});
+
 
 Route::group(['prefix'=>'home','namespace'=>'\Home'], function()
 {
+	Route::get('checkout','OrderController@checkout');//下订单页面
+    Route::get('sjld','OrderController@region');//地址的三级联动
+    Route::get('dzrk','OrderController@address');//收货地址信息入库
+    Route::get('edit','OrderController@edit');//收货地址信息入库
+    Route::get('nextOrder','OrderController@nextOrder');//立即下单
+
+    //选择付款方式
+    Route::get('payment','OrderController@payment');//下订单页面
+    Route::get('pay','OrderController@pay');//支付
+    Route::get('paySuccess','OrderController@paySuccess');//支付成功
+
+    Route::get('personal','MyCenterController@personal');//我的个人中心页面
+    Route::get('order','MyCenterController@order');//我的订单
+
 	route::any('login','LoginController@login');//登陆页面
 
 	route::any('register',function(){
@@ -61,9 +137,6 @@ Route::group(['prefix'=>'home','namespace'=>'\Home'], function()
 		return view('home.changePassword');
 	});//收货地址页面
 
-	route::any('checkout',function(){
-		return view('home.checkout');
-	});//填写订单信息页面
 
 	route::any('orderView',function(){
 		return view('home.orderView');
